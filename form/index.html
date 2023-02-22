@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <div class="logo">
+              <a href="/"><span>Donate</span>Now</a>
+            </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p><br />Personal <span>25 sec to complete</span></p>
+              </li>
+
+              <li class="step">
+                <span>2</span>
+                <p><br />Contact<span>60 sec to complete</span></p>
+              </li>
+
+              <li class="step">
+                <span>3</span>
+                <p><br />Delivery<span>30 sec to complete</span></p>
+              </li>
+            </ul>
+          </div>
+          <form action="">
+            <div class="form-one form-step">
+              <div class="bg-svg"></div>
+              <h2>Personal Information</h2>
+              <p>Enter your Personal Information</p>
+              <div>
+                <label>First Name</label>
+                <input type="text" placeholder="Mike" />
+              </div>
+              <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Dicrus" />
+              </div>
+              <div>
+                <label>Phone</label>
+                <input type="tel" placeholder="+62xxxxxx" />
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="email" placeholder="your email address" />
+              </div>
+              <div>
+                <label> Your Address</label>
+                <input type="text" placeholder="Appt , Building" />
+              </div>
+              <div>
+                <input type="text" placeholder="Street" />
+              </div>
+              <div>
+                <label>City</label>
+                <input type="text" placeholder="City" />
+              </div>
+              <div>
+                <label>State</label>
+                <input type="text" placeholder="state" />
+              </div>
+
+              <div>
+                <label>Zip Code</label>
+                <input type="text" placeholder="zipcode" />
+              </div>
+
+              <div class="birth">
+                <label>Date of birth</label>
+                <div class="grouping">
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="day"
+                    value=""
+                    min="0"
+                    max="31"
+                  />
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="month"
+                    value=""
+                    min="0"
+                    max="12"
+                  />
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    name="year"
+                    value=""
+                    min="0"
+                    max="2050"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2>NGO Information</h2>
+
+              <div>
+                <label>NGO Name</label>
+
+                <select name="ngoname" id="ngoname">
+                  <option value="">Please select an option</option>
+                  <option value="pink">pink</option>
+                  <option value="pink">pink</option>
+                  <option value="pink">pink</option>
+                </select>
+              </div>
+              <div>
+                <label>What Do you wish to donate??</label>
+
+                <select name="item" id="item">
+                  <option value="">Please select an option</option>
+                  <option value="pink">pink</option>
+                  <option value="pink">pink</option>
+                  <option value="pink">pink</option>
+                </select>
+              </div>
+
+              <div>
+                <label>Enter Quantity donated </label>
+                <span>Put 0 if none</span>
+                <input type="number" placeholder="Quantity" />
+              </div>
+              <div>
+                <label>Enter Amount donated </label>
+                <span>Put 0 if none</span>
+                <input type="tel" placeholder="amount is rs" />
+              </div>
+
+              <div>
+                <label>Attach Images of Donated Itemes</label>
+                <input type="image" placeholder="" />
+              </div>
+            </div>
+
+            <div class="form-three form-step">
+              <div class="bg-svg"></div>
+              <h2>Delivery/Pickup Details</h2>
+              <div class="checkbox">
+                <label>Do You want Pickup Services?</label>
+                <input type="checkbox" />
+                <label>Yes</label>
+                <input type="checkbox" />
+                <label>No</label>
+              </div>
+
+              
+                
+              <div>
+                <label>Enter Prefferable time for pickup: </label>
+                <input type="date" placeholder="date" />
+              </div>
+
+
+              <div class="checkbox">
+                <label>Do You accept mail??</label>
+                <input type="checkbox" />
+                <label>Yes</label>
+                <input type="checkbox" />
+                <label>No</label>
+              </div>
+              
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn-prev" disabled>Back</button>
+              <button type="button" class="btn-next">Next</button>
+              <button type="button" class="btn-submit" style="display: flex;">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
